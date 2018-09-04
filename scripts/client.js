@@ -25,7 +25,7 @@ function handleGenerateButton() {
     </div>
     `
 
-    // do we actually need to append each line separate? That's how the assignment is describing it.
+    // do we actually need to append each button separately? That's how the assignment is describing it.
     $( '#generatedDiv' ).append( newDivTemplate );
 
     addCounter++;
