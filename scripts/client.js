@@ -18,10 +18,10 @@ function readyNow() {
 function handleGenerateButton() {
 
     newDivTemplate = `
-    <div class="container col-12">
-        <h6>${addCounter}</h6>
-        <button class="swapColorButton btn btn-primary">Swap Color</button>
-        <button class="deleteMeButton btn btn-danger">Delete</button>
+    <div class="container col-12 red">
+        <p>${addCounter}</p>
+        <button class="swapColorButton btn btn-secondary">Swap Color</button>
+        <button class="deleteMeButton btn btn-secondary">Delete</button>
     </div>
     `
 
@@ -41,7 +41,6 @@ function handleDeleteMeButton() {
 function handleSwapColorButton() {
 
     console.log( 'in handleSwapColorButton' );
-
 
 
 }
