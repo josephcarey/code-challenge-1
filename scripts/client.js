@@ -25,6 +25,7 @@ function handleGenerateButton() {
     </div>
     `
 
+    // do we actually need to append each line separate? That's how the assignment is describing it.
     $( '#generatedDiv' ).append( newDivTemplate );
 
     addCounter++;
@@ -41,6 +42,9 @@ function handleDeleteMeButton() {
 function handleSwapColorButton() {
 
     console.log( 'in handleSwapColorButton' );
+    $( this.closest( 'div' ) ).toggleClass( 'red yellow' );
+    // parentDiv = this.closest( 'div' );
+    // parentDiv.toggleClass( 'red' );
 
 
 }
