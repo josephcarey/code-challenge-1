@@ -2,13 +2,7 @@ console.log( 'js' );
 
 addCounter = 1;
 
-newDivTemplate = `
-    <div class="container col-12">
-        <p>Number</p>
-        <button class="btn btn-primary">Swap Color</button>
-        <button class="btn btn-primary">Delete</button>
-    </div>
-`
+
 
 $( 'document' ).ready( readyNow );
 
@@ -21,8 +15,16 @@ function readyNow() {
 
 function handleGenerateButton() {
 
-    console.log( 'in handle Genetare Button' );
+    newDivTemplate = `
+    <div class="container col-12">
+        <h6>${addCounter}</h6>
+        <button class="btn btn-primary">Swap Color</button>
+        <button class="btn btn-danger">Delete</button>
+    </div>
+    `
 
     $( '#generatedDiv' ).append( newDivTemplate );
+
+    addCounter++;
 
 }
