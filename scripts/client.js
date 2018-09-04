@@ -11,6 +11,7 @@ function readyNow() {
 
     $( '#generateButton' ).on( 'click', handleGenerateButton );
     $( '#generatedDiv' ).on( 'click', '.deleteMeButton', handleDeleteMeButton )
+    $( '#generatedDiv' ).on( 'click', '.swapColorButton', handleSwapColorButton )
 
 }
 
@@ -34,5 +35,13 @@ function handleDeleteMeButton() {
 
     // closest is equivalent to running parent().first()
     this.closest( 'div' ).remove();
+
+}
+
+function handleSwapColorButton() {
+
+    console.log( 'in handleSwapColorButton' );
+
+
 
 }
