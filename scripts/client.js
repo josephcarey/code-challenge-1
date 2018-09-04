@@ -32,7 +32,7 @@ function handleGenerateButton() {
 
 function handleDeleteMeButton() {
 
-    console.log( this );
-
+    // closest is equivalent to running parent().first()
+    this.closest( 'div' ).remove();
 
 }
